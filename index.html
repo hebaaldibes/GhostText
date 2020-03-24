@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ghost Text Hover Effects</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: verdana;
+			height: 620px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #262626;
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			display: flex;
+			list-style-type: none;
+			flex-direction: row-reverse;			
+		}
+		ul li{
+			font-size: 5em;
+			font-weight: bold;
+			color: #fff;
+			letter-spacing: 10px;
+			filter: blur(2px;);
+			transition: 4s;
+		}
+		ul li:hover,ul li:hover ~ li{
+			transform: rotate(180deg) translateY(-200px);
+			transition: 2s;
+			filter: blur(20px);
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li>T</li>
+	<li>E</li>
+	<li>X</li>
+	<li>T</li>
+	<li>_</li>
+    <li>T</li>
+	<li>S</li>
+	<li>O</li>
+	<li>H</li>
+	<li>G</li>
+</ul>
+</body>
+</html>
